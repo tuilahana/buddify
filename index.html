@@ -47,7 +47,6 @@
     header nav {
       display: flex;
       align-items: center;
-      gap: 4rem;
     }
     header nav a {
       color: #333;
@@ -121,10 +120,43 @@
       border-bottom-right-radius: 10px;
     }
    
-    @media (min-width: 769px) and (max-width: 1000px) {
+@media (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
+
+  header {
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .hero-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-img img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .hero-text h1 {
+    font-size: 1.5rem;
+  }
+
+}
+
+@media (min-width: 769px) and (max-width: 1000px) {
       
-    body {
-      padding: 0 40px;
+   body {
+      padding: 40px;
   }
   header{
     flex-direction: column;
@@ -151,7 +183,7 @@
 
 @media (min-width: 1001px) and (max-width: 1600px) {
   body {
-    padding: 0 40px;
+    padding: 40px;
   }
 
   header{
@@ -173,11 +205,37 @@
 
   nav {
     flex-direction: row;
-    gap: 2rem;
+    gap: 4rem;
   }
 }
 
-/* 1601px and above uses existing layout, no changes needed */
+@media (min-width: 1601px) {
+  body {
+    padding: 40px;
+  }
+
+  header{
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+  }
+  
+  .hero-section{
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-img img {
+    max-width: 100%;
+  }
+
+  nav {
+    flex-direction: row;
+    gap: 4rem;
+  }
+}
 
   </style>
 </head>
@@ -200,7 +258,7 @@
       <div class="hero-text">
         <h1>Find Your Career Buddy Today!</h1>
         <p>Join a friendly peer-to-peer program that helps international students build connections, confidence, and career opportunities.</p>
-        <button class="cta-button" onclick="window.open('signup.html', '_blank')">Sign Up Now</button>
+        <button class="cta-button" onclick="window.open('signup.html', '_blank')">Join Us Today</button>
       </div>
       <div class="hero-img">
         <img src="hero img.jpg" alt="Career Buddy Graphic">
