@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up - Buddify</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background-color: #dbeafe;
+      color: #333;
+      line-height: 1.6;
+      padding: 20px;
+    }
+    .container {
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 10px;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+    .title-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .title-container img {
+      width: 40px;
+      height: 40px;
+    }
+    .title {
+      font-size: 1.8rem;
+      font-weight: 600;
+    }
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 4rem;
+    }
+    nav a {
+      color: #333;
+      text-decoration: none;
+      font-weight: 500;
+
+    }
+    nav a:hover {
+      text-decoration: none;
+      color: #fff;
+      padding: 10px;  
+      border-radius: 10px;   
+      background-color: #093456; 
+      align-content: center;
+      font-weight: 500;
+    
+    }
+    nav a:active {
+      background-color: #093456; 
+      font-weight: 800;
+    }
+    nav a:active {
+      color: #256d46;
+    }
+    nav i {
+      font-size: 1.2rem;
+      color: #333;
+      transition: color 0.3s ease;
+    }
+    nav i:hover {
+      color: #4f9d69;
+    }
+    .signup-section {
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    .signup-option {
+      background-color: #f1f5f9;
+      padding: 2rem;
+      margin: 2rem auto;
+      border-radius: 10px;
+      max-width: 1000px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    .signup-option h3 {
+      margin-bottom: 0.5rem;
+    }
+    .signup-option p {
+      margin-bottom: 1rem;
+      color: #444;
+    }
+    .cta-button {
+      background-color: #FDAD2A;
+      color: white;
+      font-weight: 600;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 10px;
+      font-size: 1rem;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+    footer {
+      background-color: #ddd;
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="title-container">
+        <img src="https://via.placeholder.com/40" alt="Logo">
+        <div class="title">Buddify</div>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="signup.html">Sign Up</a>
+        <a href="#resources">Resources</a>
+        <a href="#faq">FAQ</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+    </header>
+
+    <section class="signup-section">
+      <h2>Join Buddify</h2>
+      <p>Choose your role and start your journey with our supportive community.</p>
+
+      <div class="signup-option">
+        <h3>Sign Up as a Mentor</h3>
+        <p>Share your experiences and guide fellow international students as they build their future.</p>
+        <a href="https://forms.gle/YOUR_MENTOR_FORM_LINK" class="cta-button" target="_blank">Become a Mentor</a>
+      </div>
+
+      <div class="signup-option">
+        <h3>Sign Up as a Mentee</h3>
+        <p>Connect with someone who has walked a similar path and get support to grow personally and professionally.</p>
+        <a href="https://forms.gle/YOUR_MENTEE_FORM_LINK" class="cta-button" target="_blank">Become a Mentee</a>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025 Buddify | Built by Students, for Students</p>
+    </footer>
+  </div>
+</body>
+</html>
